@@ -14,3 +14,9 @@
       <p>Текст</p>
   </li>
 */
+import { refs } from './js/refs';
+import { handleDelete, handleHeaderFormSubmit } from './js/hendlers.js';
+import { handleThemeBtn } from './js/theme-switcher.js';
+refs.headerForm.addEventListener('submit', handleHeaderFormSubmit);
+refs.tasksList.addEventListener('click', handleDelete);
+refs.themeButton.addEventListener('click', handleThemeBtn);
